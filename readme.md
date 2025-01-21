@@ -1,3 +1,5 @@
+## **One refactor per commit - commit messages must be descriptive**
+
 # Instructions for Improving the Code
 
 Your task is to analyze and refactor the given code to improve its encapsulation, adherence to the Law of Demeter, avoidance of God objects, applying "ask-don't-tell" and elimination of code duplication (DRY). 
