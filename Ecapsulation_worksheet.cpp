@@ -52,6 +52,14 @@ public:
         std::cout << name << "take damage " << damage << "\n";
     }
 
+    void heal(int amount)
+    {
+        if (health > 0)
+        {
+            health += amount;
+
+        }
+    }
 };
 
 class Player : public Character {
@@ -147,15 +155,15 @@ public:
 
     void randomlyHealPlayer() {
         int healAmount = std::rand() % 50 + 1; // heal between 1 and 50 point
-        healPlayer(healAmount);
+        player.heal(healAmount);
     }
 
-    void healPlayer(int amount) {
+    /*void healPlayer(int amount) {
         if (player.getHealth() > 0) {
             player.setHealth(player.getHealth() + amount);
             std::cout << "Player healed by " << amount << " points.\n";
         }
-    }
+    }*/
 };
 
 // Main Function
